@@ -1,4 +1,16 @@
 <?php
+/**
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+*
+*  @author    Mantas Antanaitis <antanaitis.web@gmail.com>
+*  @copyright 2021 Webscript
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*/
 
 if (!defined('_PS_VERSION_')) {
     exit;
@@ -207,7 +219,8 @@ class Topbanner extends Module
                         'col' => 6,
                         'name' => 'TOPBANNER_TIMER_TEXT',
                         'label' => $this->l('Timer text'),
-                        'desc' => $this->l('You must leave %timer% in place. It shows where to put the timer. E.g. "Only %timer% left to enjoy it."')
+                        'desc' => $this->l('You must leave %timer% in place. 
+                            It shows where to put the timer. E.g. "Only %timer% left to enjoy it."')
                     ),
                 ),
                 'submit' => array(
@@ -217,10 +230,7 @@ class Topbanner extends Module
         );
     }
 
-    /**
-     * Set values for the inputs.
-     */
-                    protected function getConfigFormValues()
+    protected function getConfigFormValues()
     {
         $formValues = array(
             'TOPBANNER_LIVE_MODE' => Configuration::get('TOPBANNER_LIVE_MODE'),
@@ -238,10 +248,7 @@ class Topbanner extends Module
         return $formValues;
     }
 
-    /**
-     * Save form data.
-     */
-                    protected function postProcess()
+    protected function postProcess()
     {
         $form_values = $this->getConfigFormValues();
 
