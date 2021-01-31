@@ -1,4 +1,4 @@
-/**
+{**
 * NOTICE OF LICENSE
 *
 * This source file is subject to the Academic Free License (AFL 3.0)
@@ -9,7 +9,7 @@
 *  @author    Mantas Antanaitis <antanaitis.web@gmail.com>
 *  @copyright 2021 Webscript
 *  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
-*/
+*}
 
 {if $enabled}
 	<div class="banner" style="height: {$height|escape:'htmlall':'UTF-8'}px; color: {$text_color|escape:'htmlall':'UTF-8'}; background: {$bg_color|escape:'htmlall':'UTF-8'}; display: flex;">
