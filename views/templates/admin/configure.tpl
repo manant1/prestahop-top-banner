@@ -15,12 +15,12 @@
 	<h3><i class="icon icon-search"></i> {l s='Preview' mod='topbanner'}</h3>
 	<p>
 
-	<nav class="banner" style="height: {$height}px; color: {$text_color}; background: {$bg_color}; display: flex;">
-  <div class="banner-content" style="display: flex; width: fit-content; margin: 0 auto;height: {$height}px; line-height: {$height}px; font-size: {$font_size}px; font-weight: {$font_weight};">
+	<nav class="banner" style="height: {$height|escape:'htmlall':'UTF-8'}px; color: {$text_color|escape:'htmlall':'UTF-8'}; background: {$bg_color|escape:'htmlall':'UTF-8'}; display: flex;">
+  <div class="banner-content" style="display: flex; width: fit-content; margin: 0 auto;height: {$height|escape:'htmlall':'UTF-8'}px; line-height: {$height|escape:'htmlall':'UTF-8'}px; font-size: {$font_size|escape:'htmlall':'UTF-8'}px; font-weight: {$font_weight|escape:'htmlall':'UTF-8'};">
   {if $timer && $timer_date}<span id="timer_date" style="display: none;">{$timer_date}</span>
-     {if timer_text}<b style="height: {$height}px; line-height: {$height}px; font-size: {$font_size}px;">{array_shift(explode("%timer%", $timer_text))}</b>{/if}
-     &nbsp;<b id="timer" style="height: {$height}px; line-height: {$height}px; font-size: {$font_size}px;"></b>&nbsp;
-     {if timer_text}<b style="height: {$height}px; line-height: {$height}px; font-size: {$font_size}px;">{if isset(end(explode("%timer%", $timer_text)))}{end(explode("%timer%", $timer_text))}{/if}</b>{/if}
+     {if timer_text}<b style="height: {$height|escape:'htmlall':'UTF-8'}px; line-height: {$height|escape:'htmlall':'UTF-8'}px; font-size: {$font_size|escape:'htmlall':'UTF-8'}px;">{array_shift(explode("%timer%", $timer_text))|escape:'htmlall':'UTF-8'}</b>{/if}
+     &nbsp;<b id="timer" style="height: {$height|escape:'htmlall':'UTF-8'}px; line-height: {$height|escape:'htmlall':'UTF-8'}px; font-size: {$font_size|escape:'htmlall':'UTF-8'}px;"></b>&nbsp;
+     {if timer_text}<b style="height: {$height|escape:'htmlall':'UTF-8'}px; line-height: {$height|escape:'htmlall':'UTF-8'}px; font-size: {$font_size|escape:'htmlall':'UTF-8'}px;">{if isset(end(explode("%timer%", $timer_text)))}{end(explode("%timer%", $timer_text))|escape:'htmlall':'UTF-8'}{/if}</b>{/if}
      {/if}&nbsp;{$text}</span>
      </div>
 </nav>
