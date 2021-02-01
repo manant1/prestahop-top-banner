@@ -2,11 +2,11 @@
 
 ## Example of a banner:
 
-![N|Solid](https://www.dropbox.com/s/3ltmr0x0tdrg8w3/Screenshot%202021-02-01%20at%2013.30.37.png?dl=1)
+!(https://www.dropbox.com/s/3ltmr0x0tdrg8w3/Screenshot%202021-02-01%20at%2013.30.37.png?dl=1)
 
 ## Back office top banner module configuration
 
-![N|Solid](https://www.dropbox.com/s/043atzxxmdkat6f/Screenshot%202021-02-01%20at%2013.30.50.png?dl=1)
+!(https://www.dropbox.com/s/043atzxxmdkat6f/Screenshot%202021-02-01%20at%2013.30.50.png?dl=1)
 
 ### Features
 
